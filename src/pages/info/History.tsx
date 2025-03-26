@@ -19,7 +19,7 @@ const HistoriaPage = () => {
                 <div className="timeline-event ">
                     <div className="timeline-icon" style={{ backgroundColor: '#FF5656' }}>
                         <div className="container">
-                            <img src="/merc3.jpg" />
+                            <img src="/merc3.jpg" alt="Inicio " />
                         </div><ShoppingBasket size={40} />
                     </div>
                     <div className="timeline-content">
@@ -36,7 +36,7 @@ const HistoriaPage = () => {
                 <div className="timeline-event">
                     <div className="timeline-icon" style={{ backgroundColor: '#FFA500' }}>
                         <div className=" container">
-                            <img src="/uvas.png" />
+                            <img src="/uvas.png" alt="Uvas" />
                         </div><Store size={40} />
                     </div>
                     <div className="timeline-content">
@@ -88,7 +88,7 @@ const HistoriaPage = () => {
                 <div className="timeline-event">
                     <div className="timeline-icon" style={{ backgroundColor: '#8A2BE2' }}>
                         <div className="container">
-                            <img src="/merc3.jpg" />
+                            <img src="/merc3.jpg" alt="Mercado Liz" />
                         </div><ShoppingCart size={40} />
                     </div>
                     <div className="timeline-content">
@@ -115,7 +115,7 @@ const HistoriaPage = () => {
                 <div className="timeline-event">
                     <div className="timeline-icon" style={{ backgroundColor: '#FF5656' }}>
                         <div className="container">
-                            <img src="/merc3.jpg" />
+                            <img src="/merc3.jpg" alt="Liz Mayoreo" />
                         </div> <Truck size={40} />
                     </div>
                     <div className="timeline-content">
@@ -132,7 +132,7 @@ const HistoriaPage = () => {
                 <div className="timeline-event">
                     <div className="timeline-icon" style={{ backgroundColor: '#32CD32' }}>
                         <div className="container">
-                            <img src="/merc3.jpg" />
+                            <img src="/merc3.jpg" alt="Crecimiento" />
                         </div><Loader size={40} />
                     </div>
                     <div className="timeline-content">

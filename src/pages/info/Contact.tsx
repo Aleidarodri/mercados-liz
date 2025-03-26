@@ -17,8 +17,8 @@ const ContactPage = () => {
                     <li>
                         <ul>
                             {/* ----------------------------------------------------------- */}
-                            <li style={{ padding: "15px" }}>
-                                <h2>MAYOREO</h2>
+                            <li style={{ background: "rgba(222, 175, 241, 0)", padding: "15px", borderRadius: "5px", marginBottom: "1rem" }}>
+                                <h2>Liz Mayoreo</h2>
                                 <div className="contact-item">
                                     <MapPin color="var(--primary)" size={24} />
                                     <span>11 6, Francisco Zarco, 22750 Francisco Zarco, B.C.</span>
@@ -42,18 +42,17 @@ const ContactPage = () => {
                                         <div>
                                             <span style={{ paddingLeft: "5px" }}>Viernes y sabado 7:00 AM - 10:00 PM </span>
                                         </div>
-
                                     </span>
 
                                 </div>
 
                             </li>
                             {/* ----------------------------------------------------------- */}
-                            <li style={{ background: "#fff", padding: "15px", borderRadius: "5px" }}>
-                                <h2>VALLE DE GUADALUPE</h2>
+                            <li style={{ background: "#fff", padding: "15px", borderRadius: "5px", marginBottom: "1rem" }}>
+                                <h2>Liz Valle de Guadalupe</h2>
                                 <div className="contact-item">
                                     <MapPin color="var(--primary)" size={24} />
-                                    <span>Calle Principal 216, Francisco Zarco, 22750 Francisco Zarco, B.C.</span>
+                                    <span>Calle Principal 216, 22750 Francisco Zarco, B.C.</span>
                                 </div>
 
                                 <div className="contact-item">
@@ -72,11 +71,14 @@ const ContactPage = () => {
                                 </div>
                             </li>
                             {/* ----------------------------------------------------------- */}
-                            <li style={{ padding: "15px" }}>
-                                <h2>VALLE DE LAS PALMAS</h2>
+
+                            <ul>
+                            </ul>
+                            <li style={{ background: " rgba(217, 175, 241, 0)", padding: "15px", borderRadius: "5px", marginBottom: "1rem" }}>
+                                <h2>Liz Valle de las Palmas</h2>
                                 <div className="contact-item">
                                     <MapPin color="var(--primary)" size={24} />
-                                    <span> México 3, Ampliación Valle de las Palmas, 21500 Espuela, B.C.  </span>
+                                    <span>México 3, Ampliación Valle de las Palmas, 21500 Espuela, B.C.  </span>
                                 </div>
 
                                 <div className="contact-item">
@@ -96,10 +98,10 @@ const ContactPage = () => {
                             </li>
                             {/* ----------------------------------------------------------- */}
                             <li style={{ background: "#fff", padding: "15px", borderRadius: "5px" }}>
-                                <h2>TESTERAZO</h2>
+                                <h2>Liz Testerazo</h2>
                                 <div className="contact-item">
                                     <MapPin color="var(--primary)" size={24} />
-                                    <span> Carretera Tecate Ensenada Km 49, Tecate, Baja California, 21570.</span>
+                                    <span> Morelos, 21570 El Testerazo, B.C.</span>
                                 </div>
 
                                 <div className="contact-item">
@@ -116,7 +118,7 @@ const ContactPage = () => {
                                     <span><strong>Horario de Atención:{" "}</strong></span>
                                     <span style={{ paddingLeft: "5px" }}>7:00 AM - 10:00 PM</span>
                                 </div>
-                                
+
                             </li>
                             {/* ----------------------------------------------------------- */}
                         </ul>

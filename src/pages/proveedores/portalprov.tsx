@@ -123,8 +123,7 @@ const ProveePage = () => {
                         {preguntaActual.opciones.map((data: Opcion, index: number) => {
                             return (
                                 <div className={styles["reclutamiento-columnas"]} key={index}>
-                                    {data.subopciones ? (
-                                        // Si hay subopciones, mostrar los inputs o selects dentro de subopciones
+                                    {data.subopciones ? ( // Si hay subopciones, mostrar los inputs o selects dentro de subopciones
                                         <>
                                             {data.subopciones.map((subdata, subIndex) => (
                                                 subdata.tipo === "select" ? (
@@ -150,7 +149,7 @@ const ProveePage = () => {
                                             <Select
                                                 multiple={data.multiple}
                                                 values={data.values || []}  // Usamos las opciones del select desde data.values
-                                                message={data.texto}        // Usamos el texto como mensaje o label
+                                                message={data.texto}  // Usamos el texto como mensaje o label
                                             />
                                         ) : data.tipo === "h1" ? (
                                             <h1>{data.texto}</h1>

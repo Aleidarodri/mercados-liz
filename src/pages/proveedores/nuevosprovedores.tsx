@@ -89,13 +89,11 @@ const NuevoProvePage = () => {
 
     /* Arrastra */
     const [file, setFile] = useState<File | null>(null);
-
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         if (event.target.files) {
             setFile(event.target.files[0]);
         }
     };
-
     const handleRemoveFile = () => {
         setFile(null);
         const input = document.getElementById("fileInput") as HTMLInputElement;
@@ -103,20 +101,16 @@ const NuevoProvePage = () => {
             input.value = "";
         }
     };
-
     const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
         if (event.dataTransfer.files.length > 0) {
             setFile(event.dataTransfer.files[0]);
         }
     };
-
     const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
     };
-
     /* Arrastra */
-
 
     const [paginaActual, setPaginaActual] = useState(0);
     const { register, handleSubmit, setValue, reset } = useForm();
@@ -129,19 +123,17 @@ const NuevoProvePage = () => {
         try {
             await PostProveedor(data);
             await PostArchivos(renderData(data.archivo));
-
             // Mostrar mensaje de éxito
             Swal.fire({
-                title: "Gracias, nos pondremos en contacto", //response.message
+                title: "Gracias, nos pondremos en contact.o", //response.message
                 icon: "success",
                 confirmButtonText: "Aceptar",
             });
-
             // Limpiar los campos del formulario
             reset();
         } catch (error) {
             Swal.fire({
-                title: "Error al enviar el formulario",
+                title: "Error al enviar el formulario.",
                 text: "Por favor, intente nuevamente.",
                 icon: "error",
                 confirmButtonText: "Aceptar",
@@ -153,7 +145,7 @@ const NuevoProvePage = () => {
         <Page>
             <form onSubmit={onSubmit}>
                 <h2 className="titulos" style={{ marginTop: "6rem" }}>
-                    Si quieres ser nuestro proveedor llena el siguiente formulario
+                    Si quieres ser nuestro proveedor llena el siguiente formulario.
                 </h2>
                 <div className={styles["reclutamiento"]}>
                     {preguntaActual.opciones.map((data: Opcion, index: number) => (
@@ -201,7 +193,7 @@ const NuevoProvePage = () => {
                         </div>
                     ))}
                     <p className="sub-titulos5">
-                        En caso de contar con algún catálogo con sus productos favor de anexarlo
+                        En caso de contar con algún catálogo con sus productos favor de anexarlo.
                     </p>
 
                     <div

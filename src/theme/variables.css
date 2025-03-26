@@ -159,7 +159,7 @@ ion-fab-button::part(native):hover {
 .section-1 {
   background-image: linear-gradient(#ffffff00 0%, #fdfdfdee 70%, #f2f2f7 100%),
     /* Degradado Imagen  */
-    url("/merc1.jpg");
+    url("/merc1.webp");
 background-repeat: no-repeat;
   height: 75vh;
   display: flex;
@@ -410,6 +410,29 @@ background-repeat: no-repeat;
 }
 /* ---------------Archivos--------------- */
 
+.product2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.product2>* {
+  flex: 1 1 100%;
+  /* Por defecto, los elementos ocupan el 100% */
+}
+
+/* A partir de 768px, los elementos ocupan el 50% del ancho */
+@media (min-width: 768px) {
+  .product2>* {
+    flex: 1 1 calc(50% - 1rem);
+    /* Dos columnas, restando el gap */
+  }
+}
+
 /*----------------------------------------------@media modificado-------------------------------------------------*/
 
 /* Nest Hub */
@@ -417,9 +440,9 @@ background-repeat: no-repeat;
   .mail {
     width: 30rem !important;
     min-height: 2rem;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -429,86 +452,86 @@ background-repeat: no-repeat;
     /* Linea separacion */
     padding-top: .1rem;
     padding-bottom: 2.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     align-items: center;
   }
 }
-/* surface pro7 */
-@media (max-width: 912px) {
-  .mail {
-    width: 30rem !important;
-    min-height: 2rem;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section-1 {
-    background-image: linear-gradient(#ffffff44 0%, #fdfdfdee 70%, #f2f2f7 100%),
-      /* Degradado Imagen  */
-      url("/merc1.jpg");
-    background-repeat: no-repeat;
-    height: 60vh;
-    display: flex;
-  }
-
-  .section-2 {
-    position: relative;
-    background: linear-gradient(#ffffff00 0%, #fdfdfd00 70%, #f2f2f7 100%);
-    /* Linea separacion */
-    padding-top: .1rem;
-    padding-bottom: 2.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-/* asus Zenbook */
-@media (max-width: 853px) {
-  .mail {
-    width: 30rem !important;
-    min-height: 2rem;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .section-2 {
-    position: relative;
-  background: linear-gradient(#ffffff00 0%, #fdfdfdaf 70%, #f2f2f7 100% );
-    /* Linea separacion */
-    padding-top: .1rem;
-    padding-bottom: 2.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
- /* Surface duo */
-@media (max-width: 540px) {
-  .titulos {
-    margin-top: 0.5rem;
-    font-family: "Lobster";
-    font-weight: 300;
-    text-align: center;
-    margin: 1rem;
+  /* surface pro7 */
+  @media (max-width: 912px) {
+    .mail {
+      width: 30rem !important;
+      min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-  h1.titulos {
-    margin-top: 2rem;
-    font-size: 4rem;
-    font-family: "Lobster";
-    font-weight: 300;
-    text-align: center;
+
+    .section-1 {
+      background-image: linear-gradient(#ffffff44 0%, #fdfdfdee 70%, #f2f2f7 100%),
+        /* Degradado Imagen  */
+        url("/merc1.webp");
+      background-repeat: no-repeat;
+      height: 60vh;
+      display: flex;
     }
-}
+
+    .section-2 {
+      position: relative;
+      background: linear-gradient(#ffffff00 0%, #fdfdfd00 70%, #f2f2f7 100%);
+      /* Linea separacion */
+      padding-top: .1rem;
+      padding-bottom: 2.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  /* asus Zenbook */
+  @media (max-width: 853px) {
+    .mail {
+      width: 30rem !important;
+      min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .section-2 {
+      position: relative;
+      background: linear-gradient(#ffffff00 0%, #fdfdfdaf 70%, #f2f2f7 100% );
+      /* Linea separacion */
+      padding-top: .1rem;
+      padding-bottom: 2.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /* Surface duo */
+  @media (max-width: 540px) {
+    .titulos {
+      margin-top: 0.5rem;
+      font-family: "Lobster";
+      font-weight: 300;
+      text-align: center;
+      margin: 1rem;
+      }
+    h1.titulos {
+      margin-top: 2rem;
+      font-size: 4rem;
+      font-family: "Lobster";
+      font-weight: 300;
+      text-align: center;
+      }
+  }
 
 /* Iphone 14 pro max*/
  @media (max-width: 430px) {
@@ -548,18 +571,18 @@ background-repeat: no-repeat;
    }
  }
 
- /* Galaxyz Z Fold 5 Continuous */
-@media (max-width: 344px) {
-  .mail {
-    width: 21rem !important;
-    min-height: 2rem;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* Galaxyz Z Fold 5 Continuous */
+  @media (max-width: 344px) {
+    .mail {
+      width: 21rem !important;
+      min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        }
       }
-    }
 
 :root {
   --primary: #7700c0;

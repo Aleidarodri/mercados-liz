@@ -38,15 +38,15 @@
 }
 @media (max-width:430px) {
     .responsive-table {
-        width: 35rem;
-        overflow: scroll !important;
-        font-size: x-large !important;
+    width: 35rem;
+    overflow: scroll !important;
+    font-size: x-large !important;
         }
 }
 @media (max-width:430px) {
     .form {
-        width: 23.5rem;  
-        overflow: scroll !important;
+    width: 23.5rem;  
+    overflow: scroll !important;
     }
 }
 @media (max-width:430px) {
@@ -55,7 +55,7 @@
     text-align: left;
     max-inline-size: 3rem;
     font-size: 15px !important;
-     }
+    }
 }
 .reclutamiento {   
     display: flex;
@@ -77,9 +77,8 @@
 }
 @media (max-width:430px) {
     .reclutamiento-columnas {
-        flex-direction: column;
+    flex-direction: column;
     }
-
 }
 .boton {
     margin-bottom: 1rem;
@@ -88,18 +87,18 @@
 /*Galaxy z Fold 5 --Folded-- */
 @media (max-width:690px) {
     .responsive-table {
-        width: 40rem;
-        overflow: scroll !important;
-        font-size: x-large !important;
+    width: 40rem;
+    overflow: scroll !important;
+    font-size: x-large !important;
     }
     .form {
         overflow: scroll !important;
     }
     .responsive-table th,
     .responsive-table td {
-        text-align: left;
-        max-inline-size: 3rem;
-        font-size: 15px !important;
+    text-align: left;
+    max-inline-size: 3rem;
+    font-size: 15px !important;
     }
 }
 @media (max-width:540px) { /* surface duo */
@@ -122,100 +121,100 @@
 /* Iphone 14 pro max */
 @media (max-width: 430px) {
     .form {
-        margin: 1rem 3rem 1rem 1rem;
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
-        background: #ffffff;
-        padding: 1rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px #0000001a;
-        margin-bottom: 2rem;
+    margin: 1rem 3rem 1rem 1rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #0000001a;
+    margin-bottom: 2rem;
     }
 }
 /* Iphone xr */
 @media (max-width: 414px) {
     .form {
-        margin: 1rem 3rem 1rem 1rem;
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
-        background: #ffffff;
-        padding: 1rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px #0000001a;
-        margin-bottom: 2rem;
+    margin: 1rem 3rem 1rem 1rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #0000001a;
+    margin-bottom: 2rem;
     }
 }
 /* Galaxy Z Fold 5  */
 @media (max-width: 345px) {
     .reclutamiento {
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 90%;
-        background: #ffffff;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px #0000001a;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #0000001a;
     }
 }
 /* Iphone SE */
 @media (max-width: 375px) {
     .reclutamiento {
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 90%;
-        background: #ffffff;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px #0000001a;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #0000001a;
     }
 }
 /* Galaxy Z Fold 5  */
 @media (max-width: 345px) {
     .form {
-        margin: 1rem 3rem 1rem 1rem;
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 90%;
-        margin: auto;
-        background: #ffffff;
-        padding: 1rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px #0000001a;
-        margin-bottom: 2rem;
+    margin: 1rem 3rem 1rem 1rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #0000001a;
+    margin-bottom: 2rem;
     }
 }
 /* Iphone SE */
 @media (max-width: 375px) {
     .form {
-        margin: 1rem 3rem 1rem 1rem;
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 90%;
-        margin: auto;
-        background: #ffffff;
-        padding: 1rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px #0000001a;
-        margin-bottom: 2rem;
+    margin: 1rem 3rem 1rem 1rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #0000001a;
+    margin-bottom: 2rem;
     }
 }

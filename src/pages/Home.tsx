@@ -194,6 +194,7 @@ const Home: React.FC = () => {
               <IonButton style={{ textDecoration: "underline" }} color="liz" shape="round" fill="clear" onClick={() => incrementTes("Testerazo")}>
                 <MapPin color="var(--primary)" size={24} /> Liz Testerazo
               </IonButton>
+
             </div>
           </List>
 

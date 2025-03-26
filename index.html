@@ -4,30 +4,48 @@
     <meta charset="utf-8" />
     <title>Mercado Liz</title>
     
-    <base href="/" />
+    <meta name="description"
+      content="Mercado Liz ofrece productos al menudeo y mayoreo con la mejor calidad y precio. ¡Compra fácil y rápido!">
+     
+      <base href="/" />
     
-    <meta name="color-scheme" content="light dark" />
+      <meta name="color-scheme" content="light dark" />
     <meta
       name="viewport"
       content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="msapplication-tap-highlight" content="no" />
+      
+      <link rel="manifest" href="/manifest.json" />
+      <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <!-- Preconectar a Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <link rel="manifest" href="/manifest.json" />
-    
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <!-- Preload de fuentes -->
+    <link rel="preload" as="style"
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
-      <!-- add to homescreen for ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Mercado Liz" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta title="Supermercado Menudeo y Mayoreo | Mercado Liz" />
+      onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Carga alternativa si el navegador no soporta preload -->
+      <noscript>
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+      </noscript>
+
+    <!-- Cargar CSS de forma no bloqueante -->
+        <link rel="preload" href="/assets/index-CAvAS_Md.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="/assets/index-CAvAS_Md.css">
+        </noscript>
+
+    <!-- add to homescreen for ios -->
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-title" content="Mercado Liz" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta title="Supermercado Menudeo y Mayoreo | Mercado Liz" />
   </head>
   <body>
     <div id="root"></div>

@@ -9,22 +9,22 @@ const offers = [
     {
         id: 1,
         image: "/frutas.webp",
-        alt: ""
+        alt: "Frutas"
     },
     {
         id: 2,
         image: "/panaderia.webp",
-        alt: ""
+        alt: "Panaderia"
     },
     {
         id: 3,
         image: "/domicilio.webp",
-        alt: ""
+        alt: "Domicilio"
     },
     {
         id: 4,
         image: "/Carnes.webp",
-        alt: ""
+        alt: "Carnes"
     },
 ];
 

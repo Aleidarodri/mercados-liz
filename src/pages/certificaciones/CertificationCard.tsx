@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Calendar, Building} from 'lucide-react';
+import { FileText, Calendar, Building } from 'lucide-react';
 import { Certification } from './certification';
 import styles from './certificaciones.module.css';
 
@@ -17,7 +17,7 @@ export const CertificationCard: React.FC<CertificationCardProps> = ({ certificat
     return (
         <div className={styles.card}>
             <div className={styles.cardHeader}>
-                <h3 className={styles.cardTitle}>{certification.name}</h3>
+                <h1 className={styles.cardTitle}>{certification.name}</h1>
                 <span className={`${styles.cardStatus} ${statusClasses[certification.status]}`}>
                     {certification.status.charAt(0).toUpperCase() + certification.status.slice(1)}
                 </span>
