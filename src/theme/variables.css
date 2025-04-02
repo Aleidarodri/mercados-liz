@@ -1,151 +1,704 @@
-/* For information on how to create your own theme, please see:
-http://ionicframework.com/docs/theming/ */
----------------------------------------------------------accent----------------------------------------------------:root,
-.light,
-.light-theme {
-    --violet-1: #fdfcff;
-    --violet-2: #faf8ff;
-    --violet-3: #f3eeff;
-    --violet-4: #ebe4ff;
-    --violet-5: #e2d7fe;
-    --violet-6: #d6c8fa;
-    --violet-7: #c6b3f4;
-    --violet-8: #b298ec;
-    --violet-9: #482f72;
-    --violet-10: #594185;
-    --violet-11: #7156a4;
-    --violet-12: #3c2264;
-    --violet-a1: #5500ff03;
-    --violet-a2: #4900ff07;
-    --violet-a3: #4b00ff11;
-    --violet-a4: #4300ff1b;
-    --violet-a5: #4700f928;
-    --violet-a6: #4100e837;
-    --violet-a7: #4000db4c;
-    --violet-a8: #4100d067;
-    --violet-a9: #1f0052d0;
-    --violet-a10: #20005bbe;
-    --violet-a11: #290076a9;
-    --violet-a12: #1e004cdd;
-    --violet-contrast: #fff;
-    --violet-surface: #f9f6ffcc;
-    --violet-indicator: #482f72;
-    --violet-track: #482f72;
+.animate-infinite-scroll {
+  animation: infinite-scroll 20s linear infinite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+main {
+  min-height: 100vh;
+  overflow: auto;
+}
+ion-content {
+  --background: #f2f2f7;
+  color: #333;
+  padding: 5rem;
+  line-height: 1.6;
+}
+ion-datetime {
+  --background: var(--primary);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin: 1rem;
+  border: 0.2px solid var(--gray-2);
+  box-shadow: 0 4px 6px #0000001a;
 }
 
-@supports (color: color(display-p3 1 1 1)) {
-    @media (color-gamut: p3) {
+ion-button,
+ion-fab-button {
+  transition: 0.1s ease;
+}
 
-        :root,
-        .light,
-        .light-theme {
-            --violet-1: oklch(99.3% 0.0039 298);
-            --violet-2: oklch(98.2% 0.0091 298);
-            --violet-3: oklch(95.9% 0.0246 298);
-            --violet-4: oklch(93.2% 0.0393 298);
-            --violet-5: oklch(90% 0.0543 298);
-            --violet-6: oklch(86% 0.0707 298);
-            --violet-7: oklch(80.5% 0.0926 298);
-            --violet-8: oklch(73.4% 0.1223 298);
-            --violet-9: oklch(37% 0.1114 298);
-            --violet-10: oklch(43.4% 0.1114 298);
-            --violet-11: oklch(51.7% 0.1223 298);
-            --violet-12: oklch(32.4% 0.1114 298);
-            --violet-a1: color(display-p3 0.349 0.0235 1 / 0.012);
-            --violet-a2: color(display-p3 0.302 0.0235 0.8627 / 0.028);
-            --violet-a3: color(display-p3 0.2392 0.0078 0.9451 / 0.067);
-            --violet-a4: color(display-p3 0.2235 0.0039 0.9294 / 0.106);
-            --violet-a5: color(display-p3 0.2275 0.0039 0.902 / 0.157);
-            --violet-a6: color(display-p3 0.2196 0.0039 0.8392 / 0.216);
-            --violet-a7: color(display-p3 0.2039 0.0039 0.7882 / 0.295);
-            --violet-a8: color(display-p3 0.2078 0 0.7569 / 0.4);
-            --violet-a9: color(display-p3 0.098 0 0.298 / 0.812);
-            --violet-a10: color(display-p3 0.102 0 0.3333 / 0.742);
-            --violet-a11: color(display-p3 0.1333 0 0.4314 / 0.659);
-            --violet-a12: color(display-p3 0.0941 0 0.2784 / 0.863);
-            --violet-contrast: #fff;
-            --violet-surface: color(display-p3 0.9725 0.9647 0.9961 / 0.8);
-            --violet-indicator: oklch(37% 0.1114 298);
-            --violet-track: oklch(37% 0.1114 298);
-        }
+ion-button:active,
+ion-fab-button:active {
+  transform: scale(0.85);
+}
+ion-header {
+  --background: transparent !important;
+}
+ion-footer {
+  box-shadow: 0 4px 6px #0000001a;
+}
+ion-popover {
+  --width: 12rem;
+}
+ion-select-popover {
+  width: 12rem;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: xx-large;
+  text-align: inherit;
+}
+h3 {
+  color: var(--primary);
+}
+.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown),
+.swal2-height-auto,
+.swal2-height-auto.specific-class {
+  height: 100% !important;
+}
+.overlay {
+  width: 80%;
+  padding: 5rem;
+  text-align: inherit;
+  margin: auto;
+  color: var(--ion-color-liz-tint);
+  text-shadow: #2b2b2ba2 2px 2px 5px;
+}
+.overlay .titulos {
+  color: var(--primary);
+}
+.titulos {
+  margin-top: 0.5rem;
+  font-family: "Lobster";
+  font-weight: 300;
+  text-align: center;
+  margin: 2.3rem;
+}
+.titulos2 {
+  margin-top: 0.5rem;
+  font-family: "Lobster";
+  font-weight: 300;
+  text-align: center;
+  margin: 2.3rem;
+  color: #000000;
+}
+
+h2.titulos2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: "Lobster";
+  font-weight: 300;
+  text-align: center;
+}
+h1.titulos {
+  margin-top: 5rem;
+  font-size: 4rem;
+  font-family: "Lobster";
+  font-weight: 300;
+  text-align: center;
+}
+h2.titulos {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: "Lobster";
+  font-weight: 300;
+  text-align: center;
+}
+@media (max-width: 340px) {
+  .titulos {
+    max-inline-size: 20rem;
+    margin-left: 3.5rem;
+    margin-right: 1.5rem;
+  }
+  h2.titulos2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: "Lobster";
+    font-weight: 300;
+    text-align: center;
+  }
+}
+.sub-titulos {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--violet-12);
+}
+
+.sub-titulos5 {
+  font-size: 1rem;
+  font-weight: 3000;
+  color: #6900a9;
+}
+ion-fab-button::part(native) {
+  width: 60px;
+  height: 60px;
+  background: #6000a0 !important;
+  /* Cambia color */
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+ion-fab-button::part(native):hover {
+  transform: scale(1.05);
+  background: #6000a0 !important;
+}
+.section-1 {
+  background-image: linear-gradient(#ffffff00 0%, #fdfdfdee 70%, #f2f2f7 100%),
+    /* Degradado Imagen  */
+    url("/merc1.webp");
+background-repeat: no-repeat;
+  height: 75vh;
+  display: flex;
+}
+.sectionM {
+  max-width: 100%;
+  overflow-x: hidden;
+  /* Oculta el scroll horizontal */
+}
+@media (max-width: 510px) {
+  .section-1 {
+    height: 100%;
+  }
+  .overlay {
+    width: 100%;
+    padding: 15px;
+  }
+}
+.redes {
+ margin-top: 1rem !important;
+}
+.section-2 {
+  position: relative;
+  border-bottom: 1px solid #b4b4b4e0;
+  /* Linea separacion */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.section-2 ul li a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #ffffff);/* Iconos Redes */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.product {
+  /* background: #ffffff00; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.section-2 ul li a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px #b133ff57;
+  /* Sombra iconos */
+}
+.dudas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 510px) {
+  .dudas {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+      gap: 1rem;
+      width: 90%;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
     }
 }
-
-----------------------------------------------------Gray--------------------------------------------------------:root,
-.light,
-.light-theme {
-    --gray-1: #fcfcfc;
-    --gray-2: #f9f9f9;
-    --gray-3: #efefef;
-    --gray-4: #e8e8e8;
-    --gray-5: #e0e0e0;
-    --gray-6: #d8d8d8;
-    --gray-7: #cecece;
-    --gray-8: #bbb;
-    --gray-9: #8d8d8d;
-    --gray-10: #838383;
-    --gray-11: #646464;
-    --gray-12: #202020;
-    --gray-a1: #00000003;
-    --gray-a2: #00000006;
-    --gray-a3: #00000010;
-    --gray-a4: #00000017;
-    --gray-a5: #0000001f;
-    --gray-a6: #00000027;
-    --gray-a7: #00000031;
-    --gray-a8: #00000044;
-    --gray-a9: #00000072;
-    --gray-a10: #0000007c;
-    --gray-a11: #0000009b;
-    --gray-a12: #000000df;
-    --gray-contrast: #FFFFFF;
-    --gray-surface: #ffffffcc;
-    --gray-indicator: #8d8d8d;
-    --gray-track: #8d8d8d;
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  
+}
+.contact-item svg {
+  margin-right: 12px;
+  min-width: 24px;
+}
+.contact-item span {
+  font-size: 16px;
+  color: #333;
+}
+.section-3 {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 510px) {
+.section-3 {
+   width: 90%;
+   margin: 1rem 1rem 1rem 1rem;
+  }
+}
+.mail {
+  margin-top: 2rem;
+  width: 45rem;
+  background: #fff;
+  min-height: 2rem;
+  /*  background: #fff; */
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+  border-radius: 5px;
+}
+@media (max-width: 375px) {
+  .mail {
+    min-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 430px) {
+  .mail {
+    width: 23rem !important;
+    min-height: 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 345px) {
+  .mail {
+    width: 19rem !important;
+    min-height: 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.img-uva5 {
+  opacity: 0.6;
+  position: absolute;
+  left: 85%;
+  top: 20%;
+  height: 100px;
+  width: 100px;
+  transform: rotate(105deg);
+  z-index: 100;
+}
+@media (max-width: 450px) {
+  .img-uva5 {
+    display: none;
+  }
 }
 
-@supports (color: color(display-p3 1 1 1)) {
-    @media (color-gamut: p3) {
+@media (max-width: 390px) {
+.drop-zone {
+    margin: 5px 0rem 5px 0rem;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 290px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+}
 
-        :root,
-        .light,
-        .light-theme {
-            --gray-1: oklch(99.1% 0 none);
-            --gray-2: oklch(98.1% 0 none);
-            --gray-3: oklch(95.3% 0 none);
-            --gray-4: oklch(93% 0 none);
-            --gray-5: oklch(90.8% 0 none);
-            --gray-6: oklch(88.4% 0 none);
-            --gray-7: oklch(85.1% 0 none);
-            --gray-8: oklch(79.1% 0 none);
-            --gray-9: oklch(64.3% 0 none);
-            --gray-10: oklch(60.9% 0 none);
-            --gray-11: oklch(50.3% 0 none);
-            --gray-12: oklch(24.3% 0 none);
-            --gray-a1: color(display-p3 0 0 0 / 0.0118);
-            --gray-a2: color(display-p3 0 0 0 / 0.0235);
-            --gray-a3: color(display-p3 0 0 0 / 0.0627);
-            --gray-a4: color(display-p3 0 0 0 / 0.0902);
-            --gray-a5: color(display-p3 0 0 0 / 0.1216);
-            --gray-a6: color(display-p3 0 0 0 / 0.1529);
-            --gray-a7: color(display-p3 0 0 0 / 0.1922);
-            --gray-a8: color(display-p3 0 0 0 / 0.2667);
-            --gray-a9: color(display-p3 0 0 0 / 0.4471);
-            --gray-a10: color(display-p3 0 0 0 / 0.4863);
-            --gray-a11: color(display-p3 0 0 0 / 0.6078);
-            --gray-a12: color(display-p3 0 0 0 / 0.8745);
-            --gray-contrast: #FFFFFF;
-            --gray-surface: color(display-p3 1 1 1 / 80%);
-            --gray-indicator: oklch(64.3% 0 none);
-            --gray-track: oklch(64.3% 0 none);
-        }
+
+/* Archivos */
+.drop-zone {
+ margin: 5px 0rem 5px 0rem;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 300px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+@media (max-width: 390px) {
+  .drop-zone {
+    margin: 5px 0rem 5px 0rem;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    width: 290px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+}
+
+.drop-zone:hover {
+  background: linear-gradient(0deg, rgba(239, 213, 255, 0.227328431372549) 0%, rgba(81, 90, 218, 0.11808473389355745) 100%);
+  border-color: #aaaaaa !important;
+  /*  background-color: #e0e0e0; */
+}
+
+.drop-zone.drag-over {
+  background-color: #d1ecf1;
+  border-color: #17a2b8 !important;
+}
+
+.file-label {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #ffc6c6;
+}
+/* ---------------Archivos--------------- */
+
+.product2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.product2>* {
+  flex: 1 1 100%;
+  /* Por defecto, los elementos ocupan el 100% */
+}
+
+/* A partir de 768px, los elementos ocupan el 50% del ancho */
+@media (min-width: 768px) {
+  .product2>* {
+    flex: 1 1 calc(50% - 1rem);
+    /* Dos columnas, restando el gap */
+  }
+}
+
+/*----------------------------------------------@media modificado-------------------------------------------------*/
+
+/* Nest Hub */
+@media (max-width: 1024px) {
+  .mail {
+    width: 30rem !important;
+    min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-2 {
+    position: relative;
+    border-bottom: 1px solid #b4b4b4e0;
+    /* Linea separacion */
+    padding-top: .1rem;
+    padding-bottom: 2.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+  }
+}
+  /* surface pro7 */
+  @media (max-width: 912px) {
+    .mail {
+      width: 30rem !important;
+      min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
+    .section-1 {
+      background-image: linear-gradient(#ffffff44 0%, #fdfdfdee 70%, #f2f2f7 100%),
+        /* Degradado Imagen  */
+        url("/merc1.webp");
+      background-repeat: no-repeat;
+      height: 60vh;
+      display: flex;
+    }
+
+    .section-2 {
+      position: relative;
+      background: linear-gradient(#ffffff00 0%, #fdfdfd00 70%, #f2f2f7 100%);
+      /* Linea separacion */
+      padding-top: .1rem;
+      padding-bottom: 2.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  /* asus Zenbook */
+  @media (max-width: 853px) {
+    .mail {
+      width: 30rem !important;
+      min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .section-2 {
+      position: relative;
+      background: linear-gradient(#ffffff00 0%, #fdfdfdaf 70%, #f2f2f7 100% );
+      /* Linea separacion */
+      padding-top: .1rem;
+      padding-bottom: 2.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /* Surface duo */
+  @media (max-width: 540px) {
+    .titulos {
+      margin-top: 0.5rem;
+      font-family: "Lobster";
+      font-weight: 300;
+      text-align: center;
+      margin: 1rem;
+      }
+    h1.titulos {
+      margin-top: 2rem;
+      font-size: 4rem;
+      font-family: "Lobster";
+      font-weight: 300;
+      text-align: center;
+      }
+  }
+
+/* Iphone 14 pro max*/
+ @media (max-width: 430px) {
+  .mail {
+      width: 25rem !important;
+      min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+ }
+    /* Iphone 12pro*/
+@media (max-width: 390px) {
+  .mail {
+    width: 23rem !important;
+    min-height: 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+      }
+    }
+
+ /* Iphone SE*/
+ @media (max-width: 375px) {
+   .mail {
+     width: 23rem !important;
+     min-height: 2rem;
+     background: #fff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+ }
+
+  /* Galaxyz Z Fold 5 Continuous */
+  @media (max-width: 344px) {
+    .mail {
+      width: 21rem !important;
+      min-height: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        }
+      }
+
+:root {
+  --primary: #7700c0;
+  --secondary: #8001cfe8;
+  --shadow: 11px 10px 1px 0px var(--primary);
+
+  --ion-color-liz: #7700c0;
+  --ion-color-liz-rgb: 119, 0, 192;
+  --ion-color-liz-contrast: #ffffff;
+  --ion-color-liz-contrast-rgb: 255, 255, 255;
+  --ion-color-liz-shade: #6900a9;
+  --ion-color-liz-tint: #851ac6;
+
+  --color-background: #fff;
+
+  --ion-color-violet: #f3eeff;
+  --ion-color-violet-rgb: 243, 238, 255;
+  --ion-color-violet-contrast: #000000;
+  --ion-color-violet-contrast-rgb: 0, 0, 0;
+  --ion-color-violet-shade: #d6d1e0;
+  --ion-color-violet-tint: #f4f0ff;
+
+  --ion-color-rose: #cebff0;
+  --ion-color-rose-rgb: 178, 152, 236;
+  --ion-color-rose-contrast: #000000;
+  --ion-color-rose-contrast-rgb: 0, 0, 0;
+  --ion-color-rose-shade: #9d86d0;
+  --ion-color-rose-tint: #baa2ee;
+
+  --violet-1: #fdfcff;
+  --violet-1-rgb: 253, 252, 255;
+  --violet-2: #faf8ff;
+  --violet-3: #f3eeff;
+  --violet-4: #ebe4ff;
+  --violet-5: #e2d7fe;
+  --violet-6: #d6c8fa;
+  --violet-7: #c6b3f4;
+  --violet-8: #b298ec;
+  --violet-9: #482f72;
+  --violet-10: #594185;
+  --violet-11: #7156a4;
+  --violet-12: #3c2264;
+
+  --violet-a1: #5500ff03;
+  --violet-a2: #4900ff07;
+  --violet-a3: #4b00ff11;
+  --violet-a4: #4300ff1b;
+  --violet-a5: #4700f928;
+  --violet-a6: #4100e837;
+  --violet-a7: #4000db4c;
+  --violet-a8: #4100d067;
+  --violet-a9: #1f0052d0;
+  --violet-a10: #20005bbe;
+  --violet-a11: #290076a9;
+  --violet-a12: #1e004cdd;
+
+  --violet-contrast: #fff;
+  --violet-surface: #f9f6ffcc;
+  --violet-indicator: #482f72;
+  --violet-track: #482f72;
+
+  --gray-1: #fcfcfc;
+  --gray-2: #f9f9f9;
+  --gray-3: #efefef;
+  --gray-4: #e8e8e8;
+  --gray-5: #e0e0e0;
+  --gray-6: #d8d8d8;
+  --gray-7: #cecece;
+  --gray-8: #bbb;
+  --gray-9: #8d8d8d;
+  --gray-10: #838383;
+  --gray-11: #646464;
+  --gray-12: #202020;
+
+  --gray-a1: #00000003;
+  --gray-a2: #00000006;
+  --gray-a3: #00000010;
+  --gray-a4: #00000017;
+  --gray-a5: #0000001f;
+  --gray-a6: #00000027;
+  --gray-a7: #00000031;
+  --gray-a8: #00000044;
+  --gray-a9: #00000072;
+  --gray-a10: #0000007c;
+  --gray-a11: #0000009b;
+  --gray-a12: #000000df;
+
+  --gray-contrast: #ffffff;
+  --gray-surface: #ffffffcc;
+  --gray-indicator: #8d8d8d;
+  --gray-track: #8d8d8d;
 }
 
+.ion-color-liz {
+  --ion-color-base: var(--ion-color-liz);
+  --ion-color-base-rgb: var(--ion-color-liz-rgb);
+  --ion-color-contrast: var(--ion-color-liz-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-liz-contrast-rgb);
+  --ion-color-shade: var(--ion-color-liz-shade);
+  --ion-color-tint: var(--ion-color-liz-tint);
+}
+.ion-color-rose {
+  --ion-color-base: var(--ion-color-rose);
+  --ion-color-base-rgb: var(--ion-color-rose-rgb);
+  --ion-color-contrast: var(--ion-color-rose-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-rose-contrast-rgb);
+  --ion-color-shade: var(--ion-color-rose-shade);
+  --ion-color-tint: var(--ion-color-rose-tint);
+}
 
------------------:root,
-.light,
-.light-theme,
-.radix-themes {
-    --color-background: #fff;
+.ion-color-violet {
+  --ion-color-base: var(--ion-color-violet);
+  --ion-color-base-rgb: var(--ion-color-violet-rgb);
+  --ion-color-contrast: var(--ion-color-violet-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-violet-contrast-rgb);
+  --ion-color-shade: var(--ion-color-violet-shade);
+  --ion-color-tint: var(--ion-color-violet-tint);
 }

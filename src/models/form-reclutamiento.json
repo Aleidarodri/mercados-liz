@@ -1,0 +1,336 @@
+[
+   {
+      "type": "H1",
+      "name": "Datos Generales"
+   },
+   {
+      "id": 1,
+      "type": "INPUT",
+      "name": "nombre",
+      "placeholder": "Nombre",
+      "require": true
+     
+   },
+   {
+      "id": 2,
+      "type": "INPUT",
+      "name": "apellido_paterno",
+      "placeholder": "Apellido Paterno",
+      "require": false
+      
+   },
+   {
+      "id": 3,
+      "type": "INPUT",
+      "name": "apellido_materno",
+      "placeholder": "Apellido Materno",
+      "require": false
+   },
+   {
+      "id": 4,
+      "type": "NUMBER",
+      "name": "edad",
+      "placeholder": "Edad",
+      "require": false
+   },
+   {
+      "id": 5,
+      "type": "DATE",
+      "name": "fecha_nacimiento",
+      "placeholder": "Fecha de nacimiento",
+      "require": false
+   },
+   {
+      "id": 6,
+      "type": "EMAIL",
+      "placeholder": "Correo electrónico",
+      "require": false,
+      "name": "correo_electronico"
+   },
+   {
+      "id": 7,
+      "type": "NUMBER",
+      "placeholder": "Número de teléfono",
+      "require": false,
+      "name": "numero_telefono"
+   },
+   {
+      "id": 8,
+      "type": "TEXT",
+      "placeholder": "Dirección actual",
+      "require": false,
+      "name": "direccion_actual"
+   },
+   {
+      "id": 9,
+      "type": "TEXT",
+      "placeholder": "Desde cuándo radica en la ciudad",
+      "require": false,
+      "name": "fecha_radica_ciudad"
+   },
+   {
+      "id": 10,
+      "type": "TEXT",
+      "placeholder": "Medio de transporte",
+      "require": false,
+      "name": "medio_transporte"
+   },
+   {
+      "id": 11,
+      "type": "NUMBER",
+      "placeholder": "Tiempo de traslado(minutos)",
+      "require": false,
+      "name": "tiempo_traslado"
+   },
+   {
+      "type": "H1",
+      "name": "Estado Civil"
+   },
+   {
+      "id": 12,
+      "type": "TEXT",
+      "placeholder": "Estado civil",
+      "require": false,
+      "name": "estado_civil"
+   },
+   {
+      "id": 13,
+      "type": "TEXT",
+      "placeholder": "Tiempo de casado",
+      "require": false,
+      "name": "tiempo_casado"
+   },
+   {
+      "id": 14,
+      "type": "TEXT",
+      "placeholder": "Bienes mancomunados o separados",
+      "require": false,
+      "name": "bienes_mancomunados"
+   },
+   {
+      "id": 15,
+      "type": "TEXT",
+      "placeholder": "¿Tienes hijos?",
+      "require": false,
+      "name": "tienes_hijos"
+   },
+   {
+      "id": 16,
+      "type": "TEXT",
+      "placeholder": "¿Planeas tener más hijos?",
+      "require": false,
+      "name": "planeas_mas_hijos"
+   },
+   {
+      "id": 17,
+      "type": "TEXT",
+      "placeholder": "¿Tienes disponibilidad de horario?",
+      "require": false,
+      "name": "disponibilidad_horario"
+   },
+   {
+      "type": "H1",
+      "name": "Datos Escolares"
+   },
+   {
+      "id": 18,
+      "type": "TEXT",
+      "placeholder": "Último grado de estudios",
+      "require": false,
+      "name": "ultimo_grado_estudios"
+   },
+   {
+      "id": 19,
+      "type": "TEXT",
+      "placeholder": "¿Tienes certificado?",
+      "require": false,
+      "name": "tienes_certificado"
+   },
+   {
+      "id": 20,
+      "type": "TEXT",
+      "placeholder": "¿Estudias actualmente?",
+      "require": false,
+      "name": "estudias_actualmente"
+   },
+   {
+      "id": 21,
+      "type": "TEXT",
+      "placeholder": "Días y horario de estudio",
+      "require": false,
+      "name": "dias_horario_estudio"
+   },
+   {
+      "type": "H1",
+      "name": "Datos Laborales"
+   },
+   {
+      "id": 22,
+      "type": "TEXT",
+      "placeholder": "Último lugar de trabajo",
+      "require": false,
+      "name": "ultimo_lugar_trabajo"
+   },
+   {
+      "id": 23,
+      "type": "TEXT",
+      "placeholder": "Puesto que desempeñaba",
+      "require": false,
+      "name": "puesto_ultimo_trabajo"
+   },
+   {
+      "id": 24,
+      "type": "TEXT",
+      "placeholder": "¿Cuánto tiempo trabajó ahí?",
+      "require": false,
+      "name": "tiempo_trabajo"
+   },
+   {
+      "id": 25,
+      "type": "TEXT",
+      "placeholder": "Salario semanal",
+      "require": false,
+      "name": "salario_semanal"
+   },
+   {
+      "id": 26,
+      "type": "TEXT",
+      "placeholder": "Horario de trabajo",
+      "require": false,
+      "name": "horario_trabajo"
+   },
+   {
+      "id": 27,
+      "type": "TEXT",
+      "placeholder": "Día de descanso",
+      "require": false,
+      "name": "dia_descanso"
+   },
+   {
+      "id": 28,
+      "type": "TEXT",
+      "placeholder": "Motivo de salida",
+      "require": false,
+      "name": "motivo_salida"
+   },
+   {
+      "type": "H1",
+      "name": "Datos penúltimo trabajo"
+   },
+   {
+      "id": 29,
+      "type": "TEXT",
+      "placeholder": "Penúltimo lugar de trabajo",
+      "require": false,
+      "name": "penultimo_lugar_trabajo"
+   },
+   {
+      "id": 30,
+      "type": "TEXT",
+      "placeholder": "Puesto que desempeñaba",
+      "require": false,
+      "name": "puesto_penultimo_trabajo"
+   },
+   {
+      "id": 31,
+      "type": "TEXT",
+      "placeholder": "¿Cuánto tiempo trabajó ahí?",
+      "require": false,
+      "name": "tiempo_penultimo_trabajo"
+   },
+   {
+      "id": 32,
+      "type": "TEXT",
+      "placeholder": "Salario semanal",
+      "require": false,
+      "name": "salario_semanal_penultimo"
+   },
+   {
+      "id": 33,
+      "type": "TEXT",
+      "placeholder": "Horario de trabajo",
+      "require": false,
+      "name": "horario_penultimo_trabajo"
+   },
+   {
+      "id": 34,
+      "type": "TEXT",
+      "placeholder": "Día de descanso",
+      "require": false,
+      "name": "dia_descanso_penultimo"
+   },
+   {
+      "id": 35,
+      "type": "TEXT",
+      "placeholder": "Motivo de salida",
+      "require": false,
+      "name": "motivo_salida_penultimo"
+   },
+   {
+      "type": "H1",
+      "name": "Vacante"
+   },
+   {
+      "id": 36,
+      "type": "TEXT",
+      "placeholder": "¿Cómo se enteró de la vacante?",
+      "require": false,
+      "name": "como_se_entero_vacante"
+   },
+   {
+      "id": 37,
+      "type": "TEXT",
+      "placeholder": "¿Conoce a alguien que trabaje aquí?",
+      "require": false,
+      "name": "conoce_trabajador"
+   },
+   {
+      "id": 38,
+      "type": "TEXT",
+      "placeholder": "¿A quién conoce?",
+      "require": false,
+      "name": "a_quien_conoce"
+   },
+   {
+      "id": 39,
+      "type": "TEXT",
+      "placeholder": "Tipo de relación (parentesco/amigo)",
+      "require": false,
+      "name": "tipo_relacion"
+   },
+   {
+      "id": 40,
+      "type": "SELECT",
+      "placeholder": "Sucursal",
+      "require": false,
+      "name": "sucursal",
+      "multiple": false,
+      "values": [
+         { "nombre": "Mayoreo" },
+         { "nombre": "Valle de Guadalupe" },
+         { "nombre": "Valle de las Palmas" }, 
+         { "nombre": "Testerazo" }
+        
+      ]
+   },
+   {
+      "id": 41,
+      "type": "SELECT",
+      "placeholder": "Vacantes",
+      "require": false,
+      "name": "vacante",
+      "multiple": false,
+      "values": [
+         { "nombre": "Guardia" },
+         { "nombre": "Cajas" },
+         { "nombre": "Abarrotes" },
+         { "nombre": "Cocina" }
+      ]
+   },
+   {
+      "type":"archivo",
+      "name":"archivos"
+
+   }
+
+]

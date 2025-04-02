@@ -1,0 +1,17 @@
+.margen-pagina{
+margin: 1rem auto;
+}
+@media (max-width:20vh) {
+    .margen-pagina {
+        margin-top: 1rem;
+        margin-left: -25px;
+        width: 27rem;
+    }
+}
+@media (max-width:20vh) {
+    .margen-pagina {
+        margin-top: 1rem;
+        margin-left: -45px;
+        width: 27rem;
+    }
+}
