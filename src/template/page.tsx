@@ -70,13 +70,11 @@ const Page: React.FC<ContainerProps> = ({ children }) => {
                             backdropFilter: headerStyle.backdropFilter,
                         }}
                     >
-
                         <IonTitle size="large" className={style["titulos"]}>
                             Liz
                         </IonTitle>
                         <IonButtons slot="end" className={style["centerButton"]}>
-                            <IonMenuButton color="light" />
-
+                            <IonMenuButton color={isHomePage ? "dark" : "light"} />
                         </IonButtons>
                     </IonToolbar>
                 </IonHeader>

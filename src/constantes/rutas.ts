@@ -29,9 +29,6 @@ export const rutasRecursosH: ruta[] = [
     label: "Evaluación Empleados",
     pagina: ValoracionPersonalTable,
   },
-  /* Preguntar que mas accesos o que otra ventana necesita para poder agregarla 
-  (Preguntar a Diana cual es la informacion necesaria que quiere que se vea en las tablas y tambien ver el que es de postulacione 
-  para ver si se necesita mas detalles o menos detalles,ver proceso de vacante que maneja) *Diana y luis*/
 ];
 
 export const rutasCompras: ruta[] = [
@@ -50,7 +47,6 @@ export const rutasCompras: ruta[] = [
     label: "Evaluación Empleados",
     pagina: ValoracionEmpleadosPage,
   },
-  /* Preguntar que mas accesos o que otra ventana necesita para poder agregarla cesar y Luis */
 ];
 
 export const rutasAdmin: ruta[] = [
@@ -79,5 +75,4 @@ export const rutasAdmin: ruta[] = [
     label: "Evaluación Empleados",
     pagina: ValoracionEmpleadosPage,
   },
-  /* Preguntar que mas accesos o que otra ventana necesita para poder agregarla  *Dani y Luis */
 ];

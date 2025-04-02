@@ -72,14 +72,14 @@ export function Menu() {
                 if (response && response.token) {
                     // Si el servidor devuelve un token válido
                     setLocalStorageItem("token", response);
-                    setLocalStorageItem("typeUser", "Compras"); // Guarda el tipo de usuario
+                    setLocalStorageItem("typeUser", "Admin"); // Guarda el tipo de usuario
                     mostrarAlerta("Inicio de sesión exitoso");
                     // Actualiza el estado global del usuario
                     dispatch(
                         assignUsers({
                             id: response.userId,
                             token: response.token,
-                            typeUser: "Compras"
+                            typeUser: "Admin"
                         })
                     );
                     // Redirecciona al inicio
@@ -112,17 +112,17 @@ export function Menu() {
             title: message,
             showClass: {
                 popup: `
-                        animate__animated
-                        animate__fadeInUp
-                        animate__faster
-                       `
+                            animate__animated
+                            animate__fadeInUp
+                            animate__faster
+                        `
             },
             hideClass: {
                 popup: `
-                        animate__animated
-                        animate__fadeOutDown
-                        animate__faster
-                       `
+                            animate__animated
+                            animate__fadeOutDown
+                            animate__faster
+                        `
             }
         });
     };

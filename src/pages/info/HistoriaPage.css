@@ -129,3 +129,115 @@
         height: 60px;
     }
 } 
+
+/* Informacion Sucursales */
+
+/* Contenedor principal */
+.sucursales-container {
+    text-align: center;
+    padding: 30px;
+    margin-top: 1rem;
+    /*   background-image: linear-gradient(#ffffff00 0%, #fdfdfdee 70%, #f2f2f7 100%),
+    url("/fondo.jpg"); */
+}
+
+/* Título */
+.titulos {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Grid Principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Formulario */
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Lista de Sucursales */
+.sucursales-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Tarjetas de sucursales */
+.sucursal-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.sucursal-card:hover {
+    transform: translateY(-5px);
+    color: #8d5aaa;
+    box-shadow: 0px 4px 6px #6200ff21;
+}
+
+/* Estilo de los ítems de contacto */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Horarios */
+.horarios {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsive: 2 columnas en pantallas medianas */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr;
+    }
+    .sucursales-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive: 3 columnas en pantallas grandes */
+@media (min-width: 1024px) {
+    .sucursales-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Responsive: 4 columnas en pantallas muy grandes */
+@media (min-width: 1440px) {
+    .sucursales-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Ajustar para telefono */
+.phone-link {
+    color: #000000;
+    text-decoration: none;
+   /*  font-weight: bold; */
+    margin-left: 5px;
+}
+
+.phone-link:hover {
+    text-decoration: underline;
+    /* text-decoration-style: dotted;
+        text-decoration-color: rgba(115, 0, 160, 0.329); */
+    color: #6000afc5;
+}

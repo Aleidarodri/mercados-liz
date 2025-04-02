@@ -3,10 +3,9 @@ import './HistoriaPage.css';
 import { HousePlus, Loader, Pickaxe, ShoppingBasket, ShoppingCart, Store, Truck, Users } from "lucide-react";
 import ValoresSection from "./Valores";
 
-
 const HistoriaPage = () => {
     return (
-        <Page/*  titulo="Historia" */>
+        <Page /*  titulo="Historia" */>
             <section style={{ marginTop: "5rem", marginBottom: "1rem" }}>
                 <ValoresSection></ValoresSection>
             </section>
@@ -18,9 +17,10 @@ const HistoriaPage = () => {
 
                 <div className="timeline-event ">
                     <div className="timeline-icon" style={{ backgroundColor: '#FF5656' }}>
-                        <div className="container">
-                            <img src="/merc3.jpg" alt="Inicio " />
-                        </div><ShoppingBasket size={40} />
+                        {/* <div className="container">
+                    <img src="/merc3.jpg" alt="Inicio " />
+                    </div> */}
+                        <ShoppingBasket size={40} />
                     </div>
                     <div className="timeline-content">
                         <h3>1982 - Nuestros Inicios. </h3>
@@ -35,9 +35,10 @@ const HistoriaPage = () => {
 
                 <div className="timeline-event">
                     <div className="timeline-icon" style={{ backgroundColor: '#FFA500' }}>
-                        <div className=" container">
-                            <img src="/uvas.png" alt="Uvas" />
-                        </div><Store size={40} />
+                        <div className="container">
+                            <img src="/merc3.jpg" alt="Inicio " />
+                        </div>
+                        <Store size={40} />
                     </div>
                     <div className="timeline-content">
                         <h3>1994 - Abarrotes Liz. </h3>
@@ -75,6 +76,9 @@ const HistoriaPage = () => {
 
                 <div className="timeline-event">
                     <div className="timeline-icon" style={{ backgroundColor: '#6A5ACD' }}>
+                        <div className="container">
+                            <img src="/testerazo.webp" alt="Inicio " />
+                        </div>
                         <HousePlus size={40} />
                     </div>
                     <div className="timeline-content">
@@ -115,7 +119,7 @@ const HistoriaPage = () => {
                 <div className="timeline-event">
                     <div className="timeline-icon" style={{ backgroundColor: '#FF5656' }}>
                         <div className="container">
-                            <img src="/merc3.jpg" alt="Liz Mayoreo" />
+                            <img src="/may.webp" alt="Liz Mayoreo" />
                         </div> <Truck size={40} />
                     </div>
                     <div className="timeline-content">

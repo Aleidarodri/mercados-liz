@@ -43,7 +43,6 @@ import { getLocalStorageItem } from './services/localstorage';
 import { rutasAdmin, rutasCompras, rutasRecursosH } from './constantes/rutas';
 import PageTest from './pages/test/@combos/page';
 import PageUser from './pages/test/@user/page';
-import PageTestMaquetado from './pages/test/@test/page';
 import PagePostulaciones from './pages/test/@postulaciones/page';
 
 setupIonicReact({
@@ -125,9 +124,7 @@ function SwitchTypeUserRender(props: any) {
               <TerminosPage />
             </Route>
 
-
             {/* Menú */}
-
             <Route exact path="/home">
               <Home />
             </Route>
@@ -168,8 +165,6 @@ function SwitchTypeUserRender(props: any) {
             <Route exact path="/provpage">
               <InfprovPage />
             </Route>
-
-
             <Route exact path="/test">
               <PageTest />
             </Route>
@@ -180,13 +175,12 @@ function SwitchTypeUserRender(props: any) {
               <PagePostulaciones />
             </Route>
 
-
             {/* Vistas Interaccion Usuarios */}
             <Route exact path="/ValoracionEmpleadosPage">
               <ValoracionEmpleadosPage />
             </Route>
 
-            {/*  */}
+            {/*Inicio*/}
             <Route exact path="/">
               <Redirect to="/home" />
             </Route>

@@ -1,5 +1,6 @@
 import { GetValoracion } from "@/services/web_site_gets";
 import { useEffect, useState } from "react";
+/* import * as XLSX from "xlsx"; */
 import './tablasrh.css';
 
 const InfValoracionPage = () => {
@@ -52,6 +53,21 @@ const InfValoracionPage = () => {
         if (currentPage > 1) setCurrentPage(currentPage - 1);
     };
 
+    // Función para exportar los datos a Excel   //Instalar  npm install xlsx file-saver
+    /*     const exportToExcel = () => {
+            const worksheet = XLSX.utils.json_to_sheet(
+                data.map(({ comment, valor }) => ({ Comentario: comment, Calificación: valor }))
+            );
+            const workbook = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(workbook, worksheet, "Valoraciones");
+    
+            // Guardar archivo
+            const excelBuffer = XLSX.write(workbook, { bookType: "xlsx", type: "array" });
+            const dataBlob = new Blob([excelBuffer], { type: "application/octet-stream" });
+            saveAs(dataBlob, "valoraciones.xlsx");
+        };
+    */
+
     if (loading) {
         return <p>Cargando información...</p>;
     }
@@ -71,6 +87,21 @@ const InfValoracionPage = () => {
                 <h2 className="subtitulos" style={{ marginBottom: "1rem", marginTop: "2rem", marginLeft: "1rem" }}>
                     Información nuevas valoraciones
                 </h2>
+
+                <button
+                    /* onClick={exportToExcel} */
+                    style={{
+                        margin: "10px",
+                        padding: "10px",
+                        backgroundColor: " #4CAF50",
+                        color: "white",
+                        borderRadius: "5px",
+                        border: "none",
+                        cursor: "pointer",
+                    }}
+                >
+                    Exportar a Excel
+                </button>
 
                 {/* Campo de entrada para el filtro por calificación */}
                 <div style={{ margin: "0.5rem" }}>
