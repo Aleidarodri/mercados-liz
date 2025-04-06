@@ -24,7 +24,7 @@
 }
 .subtitulos-log{
     font-family: "Noto Sans", sans-serif;
-    color: #fffefe;
+    color: #721515;
     font-size: smaller;
     text-align: center;
     margin-top: 0%;
@@ -49,7 +49,7 @@
 .tab-button {
     flex: 1;
     padding: 10px;
-    background-color: #faf8f8;
+    background-color: #b4b2b2bb;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -57,7 +57,7 @@
     font-weight: 600;
 }
 .active {
-    background-color: #f3eefd;
+    background-color: #d4c1fa;
     border-bottom: 2px solid #8400ff4f;
 }
 .input-group {

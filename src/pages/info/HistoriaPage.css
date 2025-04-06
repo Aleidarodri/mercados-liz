@@ -184,9 +184,9 @@
 }
 
 .sucursal-card:hover {
-    transform: translateY(-5px);
-    color: #8d5aaa;
-    box-shadow: 0px 4px 6px #6200ff21;
+ transform: translateY(-5px);
+color: #8d5aaa;
+box-shadow: 0px 4px 6px #6200ff21;
 }
 
 /* Estilo de los ítems de contacto */
