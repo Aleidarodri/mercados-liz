@@ -21,20 +21,23 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, fileName = "document.pdf"
     };
 
     return (
-        <div className={Styles["pdfdiv"]}>
+        <div /* className={Styles["pdfdiv"]} */>
             <div className={Styles["div2"]}>
-                <h3 className={Styles["h3"]}>
-                    Conoce todas nuestras ofertas para ti
-                </h3>
-                <div className={Styles["divbo"]}>
+                <h2 className={Styles["h3"]}> {/* */}
+                    Descuentos en carnes, lácteos, limpieza y más
+                </h2>
+                <div className={Styles["divbo"]} style={{paddingBottom:"1rem"}}>
                     <IonButton
                         color={"liz"}
                         onClick={handleViewPdf}
                         className={Styles["botton"]}
                     >
-                        <IonIcon icon={pricetagsOutline} slot="start" style={{ margin: ".3rem" }} />
+                        <IonIcon icon={pricetagsOutline}
+                            slot="start" style={{ margin: ".3rem" }} />
                         Ofertas
                     </IonButton>
+
+
                     <IonButton
                         fill="outline"
                         color={"liz"}

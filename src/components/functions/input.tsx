@@ -20,7 +20,7 @@ export function Input({ label, type, placheolder, props, defaultValue }: Inputpr
             {...props}
 
         >
-            {type === "password" && (<IonInputPasswordToggle slot="end" color="dark" />)}
+            {type === "password" && (<IonInputPasswordToggle slot="end" color="tertiary" />)}
         </IonInput>
     )
 }
