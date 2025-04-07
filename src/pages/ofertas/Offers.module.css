@@ -481,13 +481,13 @@
 /*------------------------------------------------------------------------------------------*/
 /*PDF*/
 
-.pdfdiv {
+/* .pdfdiv {
     margin-top: 1rem !important;
-    background: #7c2bbe17;
+    background: #2badbe;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 1rem;                      Linea Morada
     margin: 1rem auto auto auto;
-}
+} */
 .div2 {
     display: flex;
     flex-direction: column;
@@ -496,6 +496,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+/* texto */
 .h3 {
     font-family: "Lobster";
     font-size: 3rem;
@@ -513,11 +514,11 @@
     color: #ad00fd;
 }
 }
-.parfo {
+/* .parfo {
     margin-top: 0.5rem;
-    color: #66be2b;
+    color: #2b66be;             
     margin-bottom: -1rem;
-}
+} */
 .divbo {
     display: flex;
     gap: 1rem;
@@ -899,7 +900,7 @@ button:hover {
     box-shadow: 0 4px 6px #d184fd00;
 }
 .cardcomt:hover{
-    box-shadow: 0 4px 6px #d184fd33;
+    box-shadow: 0 4px 6px #a58ebd33;
     overflow: hidden;
 }
 

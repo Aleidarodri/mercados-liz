@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { IonButton, IonIcon } from '@ionic/react';
 import { arrowDownCircleOutline, pricetagsOutline } from 'ionicons/icons';
@@ -13,6 +12,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, fileName = "document.pdf"
     const handleViewPdf = () => {
         window.open(pdfUrl, '');
     };
+
     const handleDownloadPdf = () => {
         const link = document.createElement('a'); // Crear un elemento <a>
         link.href = pdfUrl; // Establecer la URL del PDF
@@ -26,7 +26,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, fileName = "document.pdf"
                 <h2 className={Styles["h3"]}> {/* */}
                     Descuentos en carnes, lácteos, limpieza y más
                 </h2>
-                <div className={Styles["divbo"]} style={{paddingBottom:"1rem"}}>
+                <div className={Styles["divbo"]} style={{ paddingBottom: "1rem" }}>
                     <IonButton
                         color={"liz"}
                         onClick={handleViewPdf}
@@ -37,11 +37,10 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, fileName = "document.pdf"
                         Ofertas
                     </IonButton>
 
-
                     <IonButton
                         fill="outline"
                         color={"liz"}
-                        onClick={ /* handleDownloadPdf */  handleViewPdf}
+                        onClick={handleDownloadPdf}
                         className={Styles["botton"]} >
                         <IonIcon icon={arrowDownCircleOutline} slot="start" />
                         Descargar ofertas
